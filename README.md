@@ -1,53 +1,41 @@
 # ATELIER-3
-Se fameliariser avec les classes
+## Se fameliariser avec les classes :
 
-#include <iostream>
+### Classe Voiture :
+![classe](https://github.com/user-attachments/assets/a1884d37-59da-407d-9b8e-8637e9d816b6)
 
-using namespace std;
+### Q1)-Constructeur par défaut : Initialise tous les attributs avec des valeurs par défaut.
+ ![constructeur par defaut](https://github.com/user-attachments/assets/cbbc629c-e7c7-42c9-9942-a25d699a6435)
 
-class Voiture{
-    private :
-   string marque ;        // la marque de la voiture.
- string modele  ;      // le modèle de la voiture.
- int annee    ;               // l'année de fabrication de la voiture.
- float kilometrage ;         // le kilométrage actuel de la voiture.
- float vitesse     ;        // la vitesse actuelle de la voiture.
+### Q2)-Constructeur avec paramètres : Permet d'initialiser la voiture avec une marque, un modèle,
+une année, un kilométrage et une vitesse initiale.
+![COnstructeur](https://github.com/user-attachments/assets/da9c716a-5b58-4873-a081-65258850edb4)
 
-  public :
-   Voiture( marque(""), modele(""), annee(0), kilometrage(0.0), vitesse(0.0) ){
+  ### Q3)-Méthode accelerer(float valeur) : Incrémente la vitesse actuelle de la voiture en fonction de la
+valeur passée en paramètre.
+![Accel](https://github.com/user-attachments/assets/22423802-258c-4b97-b4a1-f26611cdc678)
 
-    }
-     Voiture(string marque,string modele , int annee, float kilometrage ,float vitesse){
-          marque ="Volkswagen" ;
-    modele="Golf"   ;
-    annee =  2020         ;
-    kilometrage= 1000    ;
-    vitesse = 120        ;
+  ### Q4-Méthode freiner(float valeur) : Diminue la vitesse actuelle de la voiture en fonction de la
+valeur passée en paramètre, sans que la vitesse ne devienne négative.
+![Freiner ](https://github.com/user-attachments/assets/0722f21b-bc8f-413f-94bd-18b80ef649fc)
 
-    }
-    void accelerer(float valeur) {
-        float valeur ;
-        vitesse += valeur  ;
-             }
-   void  freiner(float valeur) {
-      float valeur ;
-      if (vitesse>0) {
-      vitesse -= valeur ;}
-      else vitesse = 0   }
+### Q5)-Méthode afficherInfo() : Affiche les informations sur la voiture (marque, modèle, année,
+kilométrage, vitesse).
+![afficher ](https://github.com/user-attachments/assets/b838c3fd-45b2-498c-8c3e-3ab2a155af4b)
+  ### Q6)-Méthode avancer(float distance) : Incrémente le kilométrage en fonction de la distance passée
+en paramètre.
+![avan](https://github.com/user-attachments/assets/de088e3f-25ea-4ef8-a9a9-01ad46a7d225)
 
-    void   afficherInfo(){
-          cout<<"voici les informations de la voiture :" <<endl ;
-          cout<<" la marque de cette voiture est "<<marque<<endl ;
-          cout<<" le modele de cette voiture est "<<modele<<endl ;
-          cout<<" l annee de cette voiture est "<<annee<<endl ;
-          cout<<" le Kilometrage de cette voiture est "<< Kilometrage<<"km"<<endl ;
-          cout<<" la vitesse de cette voiture est "<<vitesse<<"km/m"<<endl ;
-          }
-       void   avancer(float distance) {float distance ;
-                   kilometrage += distance;
-                     }
-  ~Voiture() {
-        std::cout << "La voiture " << marque << " " << modele << " est détruite"<<endl ;
-    }
+### Q7)-Destructeur : Affiche un message indiquant que la voiture est détruite.
+![destructeur](https://github.com/user-attachments/assets/72164d2a-1cfb-410c-b948-82a483352fe2)
 
-}
+
+
+
+
+
+
+  
+ 
+      
+
